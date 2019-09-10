@@ -1,0 +1,35 @@
+.nav{
+  background: rgb(8, 126, 4);
+  color: #FFF;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.nav__logo{
+  font-size: 24px;
+  padding: 20px;
+  margin-left: 25px
+}
+.nav__logo-text{
+  color: #FFF;
+  text-decoration: none
+}
+.nav ul{
+  margin: 0;
+  padding: 0;
+  display: flex;
+  width: 50%;
+  margin-left: auto
+}
+ul li{
+  padding: 20px;
+  list-style: none;
+  margin-left: auto;
+}
+ul li a{
+  color: #FFF;
+  display: block;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+}
