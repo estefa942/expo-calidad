@@ -1,0 +1,21 @@
+<div class="container">
+  <div class="enter-item">
+    <input class="enter-item__input" [(ngModel)]="item">
+    <button class="enter-item__button" (click)="addItem(item)">Add</button>
+  </div>
+  <div class="list">
+    <div
+    class="list__item"
+    *ngFor="let item of items; let i = index"
+    [ngClass] = "{'list__item--done': item.status}" >
+      <span class="list__item__name">{{item.name}}</span>
+      <button
+      class="list__item__button"
+      (click)="onDone(i)"
+      *ngIf="!item.status">Done</button>
+    </div>
+  </div>
+  <div>
+
+  </div>
+</div>
