@@ -1,0 +1,21 @@
+.container{
+  height: 88vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .enter-item{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 5%;
+  }
+
+  .list{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+}
