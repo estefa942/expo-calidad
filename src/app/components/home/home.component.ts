@@ -15,9 +15,13 @@ export class HomeComponent implements OnInit {
 
   }
 
-  addItem(item){
+  addItem(item): void{
     this.items.push({name: this.item , status:false});
     this.item = '';
+  }
+
+  onDone(index): void{
+    this.items[index]= {...this.items[index], status:true};
   }
 
 }
